@@ -1,4 +1,4 @@
-# CS4944 - Artificial Intelligence Lab
+#Artificial Intelligence Lab
 
 Student: Malik Muhammad Ahmad
 Roll No: 395
