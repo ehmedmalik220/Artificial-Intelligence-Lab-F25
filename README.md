@@ -3,7 +3,7 @@
 Student: Malik Muhammad Ahmad
 Roll No: 395
 
-This repo has my AI lab work for CS4944.
+This repo contains ai lab tasks.
 
 ## Lab 1: Introduction to AI & Paradigms
 Scholarship screening with a simple rule-based program. It compares a rule checker (score, documents, attendance, fee) with a probability threshold on the same cases.
