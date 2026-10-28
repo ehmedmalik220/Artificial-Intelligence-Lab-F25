@@ -1,4 +1,4 @@
-#Artificial Intelligence Lab
+## Artificial Intelligence Lab
 
 Student: Malik Muhammad Ahmad
 Roll No: 395
@@ -17,4 +17,10 @@ A smart classroom agent that picks ECO, COOL, WARM or IDLE from temperature and 
 
 Run: python lab2/lab2_agent.py
 
-Files: lab2/lab2_agent.py, lab2/Lab2_Report.docx
+## Lab 3 - Uninformed Search
+Run: python3 lab3_search.py
+Output: BFS, DFS, DLS, IDDFS, UCS results
+
+## Lab 4 - Informed Search (A*)
+Run: python3 lab4_astar.py
+Output: A*, UCS, overestimate results
