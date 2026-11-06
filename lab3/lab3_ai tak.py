@@ -1,11 +1,6 @@
-# Lab 3: Uninformed Search
-# Rooms: A to G, goal is G
-
 from collections import deque
 
 graph = {"A": ["B", "C"], "B": ["D", "E"], "C": ["F"], "D": [], "E": ["G"], "F": [], "G": []}
-
-# BFS: queue, level by level
 def bfs(graph, start, goal):
     queue = deque([[start]])
     seen = {start}
@@ -22,7 +17,6 @@ def bfs(graph, start, goal):
                 queue.append(path + [next_node])
     return None, visit_order
 
-# DFS: stack, deep first
 def dfs(graph, start, goal):
     stack = [[start]]
     seen = set()
@@ -40,7 +34,6 @@ def dfs(graph, start, goal):
             stack.append(path + [next_node])
     return None, visit_order
 
-# DLS: DFS with a depth limit
 def dls(node, goal, limit, path):
     if node == goal:
         return "FOUND", path
@@ -61,10 +54,8 @@ def dls(node, goal, limit, path):
         return "CUTOFF", None
     return "FAILURE", None
 
-# Weighted graph: (room, cost)
 weighted = {"A": [("B", 1), ("C", 6)], "B": [("D", 4), ("E", 1)], "C": [("F", 5), ("G", 6)], "D": [], "E": [("G", 1)], "F": [], "G": []}
 
-# UCS: always expand the cheapest path first
 def ucs(start, goal):
     frontier = [(0, start, [start])]
     best_cost = {start: 0}
