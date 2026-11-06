@@ -24,3 +24,9 @@ Output: BFS, DFS, DLS, IDDFS, UCS results
 ## Lab 4 - Informed Search (A*)
 Run: python3 lab4_astar.py
 Output: A*, UCS, overestimate results
+
+## Lab 5: 
+Lab 5 implements Minimax and Alpha-Beta pruning on a small game tree and counts evaluated leaves — run python lab5.py (plain Python 3, no extra packages).
+
+## Lab 6:
+Lab 6 builds a tokenization, chunking and embedding-based text retrieval pipeline and evaluates it with Hit@3 and MRR@3 — open the notebook in Google Colab and run all cells.
