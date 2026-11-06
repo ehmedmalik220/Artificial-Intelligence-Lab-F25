@@ -1,23 +1,4 @@
-# Name: Malik M Ahmad
-# Roll No: 395
-# Class: BSAI/3A
-# LAB: 5
-#
-# For Lab 5 I started by tracing the game tree by hand, because I wanted to
-# see how MAX picks the biggest value and MIN picks the smallest one at each
-# level, and then I wrote a simple minimax function that goes down to the
-# leaves and comes back up with the best value. After that I wrote alpha-beta,
-# and at first I did not understand when to stop a branch, so I kept mixing up
-# alpha and beta, but when I put the break on alpha greater than or equal to
-# beta, the code finally made sense. My counter also gave me trouble in the
-# start, because a normal number did not change inside the function, so I used
-# a list to keep the count, and then the numbers matched my hand trace. The
-# most surprising part was that reordering the tree changed the alpha-beta
-# leaves from 6 to 8, but the final value stayed 5 in every test, so I learned
-# that pruning only saves work, it never changes the best move.
-
 import math
-
 
 def minimax(depth, node, is_max, scores, target, leaves):
     if depth == target:
